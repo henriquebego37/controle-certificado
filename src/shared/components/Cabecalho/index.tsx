@@ -12,29 +12,33 @@ import {
 import CameraIcon from "@mui/icons-material/PhotoCamera";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+const theme = createTheme();
 
 export default function Cabecalho() {
   return (
     <Box
+      display="flex"
       width="100%"
       height="130px"
-      bgcolor="#ffcdd2"
-      position="relative"
-      margin="0"
-      padding="0"
+      bgcolor="#f3e0e0"
+      // marginLeft="-8px"
+      alignItems="center"
+      alignSelf="center"
     >
-      <Toolbar>
-        <Image
-          src="E:\Site\public_html\portal\controle\arquivo\uploads\certificado"
-          width={500}
-          height={500}
+      <Box
+        width="170px"
+        height="60px"
+        marginLeft="10px"
+      >
+        <img
+          src="https://www.netbil.com.br/portal/controle/arquivo/uploads/certificado/logo.png"
+          width="100%x"
+          height="100%"
           alt={""}
         />
-        <CameraIcon sx={{ mr: 3 }} />
-        <Typography variant="h6" color="white" textAlign="center">
-          Certificados
-        </Typography>
-      </Toolbar>
+      </Box>
     </Box>
   );
 }

@@ -8,8 +8,8 @@ import Home from '@/views/ControleCertificados/BodyHome';
 
 export default function Certificados() {
   return (
-    <Box width="100%" height="100%" padding="0" margin="0">
+    <Box width="100%" height="100%" display="flex">
       <Home />
-    </Box>
+    </Box> 
   );
 }

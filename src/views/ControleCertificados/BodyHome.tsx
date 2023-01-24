@@ -8,11 +8,15 @@ import { red } from "@mui/material/colors";
 import { Container } from "@mui/material";
 import { Box } from "@mui/system";
 import Cabecalho from "@/shared/components/Cabecalho";
+import Landing from "@/shared/components/Landing";
 
 export default function Home() {
   return (
-    <Box width="100%" height="100%" padding="0" margin="0">
+    <Box width="100%" height="100%" >
     <Cabecalho />
+    <Landing />
+    
+    
     </Box>
   );
 }
